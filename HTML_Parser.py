@@ -22,8 +22,8 @@ for i in data_lines:
     actual.append(i)
 words = []
 for line in actual:
-    words.append(line.strip().split(’’))
+    words.append(line.strip().split(''))
 merged = list(itertools.chain( * words))
 with codecs.open("/root/sample.txt", "w", encoding = "utf-8") as f:
     for i in merged:
-    f.write(i + ’\n’)
+    f.write(i + '\n')
